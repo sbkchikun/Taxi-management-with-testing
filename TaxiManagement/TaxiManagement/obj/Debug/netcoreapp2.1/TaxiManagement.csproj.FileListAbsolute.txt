@@ -1,0 +1,12 @@
+D:\Documents\Uniwork\sdam\asinments2p t 2\TaxiManagement\TaxiManagement\obj\Debug\netcoreapp2.1\TaxiManagement.csprojAssemblyReference.cache
+D:\Documents\Uniwork\sdam\asinments2p t 2\TaxiManagement\TaxiManagement\obj\Debug\netcoreapp2.1\TaxiManagement.AssemblyInfoInputs.cache
+D:\Documents\Uniwork\sdam\asinments2p t 2\TaxiManagement\TaxiManagement\obj\Debug\netcoreapp2.1\TaxiManagement.AssemblyInfo.cs
+D:\Documents\Uniwork\sdam\asinments2p t 2\TaxiManagement\TaxiManagement\obj\Debug\netcoreapp2.1\TaxiManagement.csproj.CoreCompileInputs.cache
+D:\Documents\Uniwork\sdam\asinments2p t 2\TaxiManagement\TaxiManagement\bin\Debug\netcoreapp2.1\TaxiManagement.deps.json
+D:\Documents\Uniwork\sdam\asinments2p t 2\TaxiManagement\TaxiManagement\bin\Debug\netcoreapp2.1\TaxiManagement.runtimeconfig.json
+D:\Documents\Uniwork\sdam\asinments2p t 2\TaxiManagement\TaxiManagement\bin\Debug\netcoreapp2.1\TaxiManagement.runtimeconfig.dev.json
+D:\Documents\Uniwork\sdam\asinments2p t 2\TaxiManagement\TaxiManagement\bin\Debug\netcoreapp2.1\TaxiManagement.dll
+D:\Documents\Uniwork\sdam\asinments2p t 2\TaxiManagement\TaxiManagement\bin\Debug\netcoreapp2.1\TaxiManagement.pdb
+D:\Documents\Uniwork\sdam\asinments2p t 2\TaxiManagement\TaxiManagement\obj\Debug\netcoreapp2.1\TaxiManagement.dll
+D:\Documents\Uniwork\sdam\asinments2p t 2\TaxiManagement\TaxiManagement\obj\Debug\netcoreapp2.1\TaxiManagement.pdb
+D:\Documents\Uniwork\sdam\asinments2p t 2\TaxiManagement\TaxiManagement\obj\Debug\netcoreapp2.1\TaxiManagement.genruntimeconfig.cache

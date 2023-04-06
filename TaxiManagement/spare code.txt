@@ -1,0 +1,137 @@
+Taxi fronttaxi = Taxispace[0];
+                fronttaxi.AddFare(destination,agreedPrice);
+
+
+{
+            List<string> Lsuccess = new List<string>();
+            Lsuccess.Add("Taxi locations");
+            Lsuccess.Add("==============");
+            SortedDictionary<int, Taxi> taxis = taxiMgr.GetAllTaxis();
+            
+            if (taxis.Count == 0)
+            {
+
+
+                Lsuccess.Add("No taxis");
+                return Lsuccess;
+            }
+            else
+            {
+                foreach (Taxi t in taxis.Values)
+                {
+                    Rank r = t.Rank;
+                    if (r != null)
+                    {
+
+
+                        Lsuccess.Add("Taxi " + t.Number + " is in rank " + r.Id);
+                    }
+                    else if (t.Location == Taxi.ON_ROAD)
+                    {
+                        {
+                            if (t.Destination.Length != 0)
+                            {
+
+                                Lsuccess.Add("Taxi " + t.Number + " is on the road to " + t.Destination);
+                            }
+                            else if (t.Destination.Length == 0)
+                            {
+
+                                Lsuccess.Add("Taxi " + t.Number + " is on the road");
+                            }
+                        }
+
+
+                    }
+
+                }
+
+                return Lsuccess;
+            }
+
+using System;
+using System.Collections.Generic;
+using System.Text;
+namespace TaxiManagement
+{
+    public class RankManager
+    {
+        private Dictionary<int, Rank> ranks = new Dictionary<int, Rank>();
+        public RankManager()
+        {//creates the ranks for the tests
+            Rank Numerouno = new Rank(1, 5);
+            Rank Numerodos = new Rank(1, 2);
+            Rank Numerotres = new Rank(1, 4);
+            ranks.Add(1, Numerouno);
+            ranks.Add(2, Numerodos);
+            ranks.Add(3, Numerotres);
+        }
+        public Rank FindRank(int rankid)
+        {
+            bool foundkey = ranks.ContainsKey(rankid);
+            if (foundkey == true)
+            {
+                return ranks[rankid];
+            }
+            else
+            { return null; }
+
+        }
+
+        public bool AddTaxiToRank(Taxi t, int rankid)
+        {
+            if (ranks.ContainsKey(rankid) == true)
+            {
+                Rank r = FindRank(rankid);
+                Rank r1 = FindRank(1);
+                Rank r2 = FindRank(2);
+                Rank r3 = FindRank(3);
+                if (r.AddTaxi(t) == true && r1.AddTaxi(t) == true && r2.AddTaxi(t) == true && r3.AddTaxi(t) == true)
+                {
+
+                    if (r.AddTaxi(t) == true)
+                    {
+                        r.AddTaxi(t);
+                        return true;
+                    }
+                    else { return false; }
+                }
+                else
+                {
+                    return false;
+                }
+            }
+            else { return false; }
+
+        }
+        public Taxi FrontTaxiInRankTakesFare(int rankId, string destination, double agreedPrice)
+        {
+            Rank r = FindRank(rankId);
+            
+           //failed code
+            // bool rankfound = false;
+            //if (FindRank(rankId) != null) { rankfound = true; }
+            //if (rankfound==true)
+           // {
+                if (r != null)
+                {
+
+                    {
+
+                        if (r.FrontTaxiTakesFare(destination, agreedPrice) != null)
+                        {
+                        Taxi t = r.FrontTaxiTakesFare(destination, agreedPrice);
+                        return r.FrontTaxiTakesFare(destination, agreedPrice);
+                        }
+                        else return null;
+                    }
+
+                }
+                else return null;
+            //}
+            //else return null; 
+        }
+    }
+}
+    
+
